@@ -1,0 +1,5 @@
+{
+  "name": "@scripts/common",
+  "private": true,
+  "type": "module"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "scripts",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest",
+    "globals": "^17.3.0",
+    "oxfmt": "^0.40.0",
+    "oxlint": "^1.55.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@scripts/common": "workspace:*",
+    "vite": "^7.3.1",
+    "vite-plugin-monkey": "^7.1.9"
+  }
+}

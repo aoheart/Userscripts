@@ -1,0 +1,12 @@
+このフォルダ内には第三者の作成したファイルが含まれます。
+使用する場合は以下の内容を参照してください。
+
+---
+
+Attribution: MetaBrainz Foundation
+Link: https://github.com/metabrainz/design-system
+License: CC BY-SA 4.0
+License URL: https://creativecommons.org/licenses/by-sa/4.0/
+files:  
+musicbrainz-icon.svg
+musicbrainz-icon-detail.svg

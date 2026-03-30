@@ -344,6 +344,13 @@ export function extractReleaseMbid(input: string): ParsedMbid | null {
  * UrlEntry[] を MusicBrainz の /release/add または /release/{mbid}/edit へ送信する。
  * linkTypes が複数の場合は同一 URL を複数エントリに展開する（Apple Music 等）。
  */
+function buildEditNote(): string {
+  const name = GM_info?.script?.name ?? "unknown script";
+  const version = GM_info?.script?.version;
+  const label = version ? `${name} (${version})` : name;
+  return `${window.location.href}\n---\n${label}`;
+}
+
 export function seedToMusicBrainz(entries: UrlEntry[], parsed: ParsedMbid | null): void {
   const host = parsed?.host ?? "musicbrainz.org";
   const mbRoot = `https://${host}`;
@@ -363,6 +370,8 @@ export function seedToMusicBrainz(entries: UrlEntry[], parsed: ParsedMbid | null
       }
     }
   }
+
+  params["edit_note"] = buildEditNote();
 
   submitMBForm(createMBForm(action, params, { mbRoot }));
 }

@@ -1,7 +1,7 @@
 {
   "name": "links-from-linkfire",
   "private": true,
-  "version": "2026.03.29.1",
+  "version": "2026.03.31.1",
   "type": "module",
   "scripts": {
     "dev": "vite",

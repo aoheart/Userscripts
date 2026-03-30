@@ -579,7 +579,7 @@ export function buildImporterWidget(opts: ImporterWidgetOptions): ImporterWidget
       GM_setClipboard(result.entries.map((e) => e.url).join("\n"), "text");
       setState(`✓ ${result.entries.length}件 コピー済`, false);
     }
-    setTimeout(() => setState("コピー", false), 2500);
+    setTimeout(() => setState("copy", false), 2500);
   }
 
   async function collectAndSeed(parsed: ParsedMbid | null, setState: StateCallback): Promise<void> {
@@ -590,7 +590,7 @@ export function buildImporterWidget(opts: ImporterWidgetOptions): ImporterWidget
       seedToMusicBrainz(result.entries, parsed);
       setState(`✓ ${result.entries.length}件 Seed済`, false);
     }
-    setTimeout(() => setState("送信", false), 2500);
+    setTimeout(() => setState("send", false), 2500);
   }
 
   /* ---------- wrapper ---------- */
@@ -610,7 +610,7 @@ export function buildImporterWidget(opts: ImporterWidgetOptions): ImporterWidget
   Object.assign(rightGroup.style, { display: "flex", alignItems: "center", gap: "8px" });
 
   /* ---------- Copy All ---------- */
-  const copyButton = createWidgetButton("コピー", "linear-gradient(135deg, #89b4fa, #b4befe)", "#1e1e2e");
+  const copyButton = createWidgetButton("copy", "linear-gradient(135deg, #89b4fa, #b4befe)", "#1e1e2e");
   copyButton.style.display = showCopyBtn ? "" : "none";
   let isCopyProcessing = false;
   const setCopyState = makeProcessingButton(copyButton, "Copy All");
@@ -663,7 +663,7 @@ export function buildImporterWidget(opts: ImporterWidgetOptions): ImporterWidget
   });
 
   /* ---------- Seed ---------- */
-  const seedButton = createWidgetButton("送信", "#ba478f", "#cdd6f4");
+  const seedButton = createWidgetButton("send", "#ba478f", "#cdd6f4");
   seedButton.style.whiteSpace = "nowrap";
   let isSeedProcessing = false;
   const setSeedState = makeProcessingButton(seedButton, "Seed");

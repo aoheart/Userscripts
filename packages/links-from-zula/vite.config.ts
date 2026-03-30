@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import monkey from "vite-plugin-monkey";
 import { baseconfig } from "../../vite.baseconfig";
 import path from "path";
+import pkg from "./package.json";
 
 export default defineConfig({
   build: {
@@ -14,7 +15,7 @@ export default defineConfig({
       userscript: {
         ...baseconfig,
         name: "Links from ZULA",
-        version: "1.0",
+        version: pkg.version,
         description: {
           "": "Copy all ZULA distribution links at once, or send them to MusicBrainz.",
           ja: "ZULAの配信リンクを一括でコピー、またはMusicBrainzに送信する",

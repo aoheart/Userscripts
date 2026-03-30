@@ -1,0 +1,53 @@
+name: Build and Deploy UserScript
+on:
+  push:
+    branches: [main]
+    paths:
+      - "packages/**"
+      - "package.json"
+      - "bun.lock"
+      - "vite.config.*"
+      - "tsconfig*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: oven-sh/setup-bun@v2
+
+      - run: bun install
+
+      - name: Build
+        run: bun run build
+
+      - name: Check dist
+        run: test -n "$(ls dist/*.user.js 2>/dev/null)" || (echo "No .user.js found" && exit 1)
+
+      - name: Deploy to dist branch
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          mkdir -p /tmp/dist-output
+          cp dist/*.user.js /tmp/dist-output/
+          rm -rf dist/
+
+          git fetch origin dist || true
+          if git show-ref --verify --quiet refs/remotes/origin/dist; then
+            git checkout -B dist origin/dist
+          else
+            git checkout --orphan dist
+          fi
+          git rm -rf --ignore-unmatch .
+
+          echo -e "node_modules/\n*.log" > .gitignore
+
+          cp /tmp/dist-output/*.user.js .
+          git add .
+          git commit -m "build: ${GITHUB_SHA::7}" || echo "No changes"
+          git push origin dist

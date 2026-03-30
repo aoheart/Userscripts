@@ -73,6 +73,7 @@ async function main() {
 import monkey from 'vite-plugin-monkey';
 import { baseconfig } from "../../vite.baseconfig";
 import path from 'path';
+import pkg from "./package.json";
 
 export default defineConfig({
   build: {
@@ -85,7 +86,7 @@ export default defineConfig({
       userscript: {
         ...baseconfig,
         name: '${projectName}',
-        version: '1.0',
+        version: pkg.version,
         description: {
           '': '',
           ja: '',

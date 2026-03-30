@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import monkey from "vite-plugin-monkey";
 import { baseconfig } from "../../vite.baseconfig";
 import path from "path";
+import pkg from "./package.json";
 
 export default defineConfig({
   build: {
@@ -14,7 +15,7 @@ export default defineConfig({
       userscript: {
         ...baseconfig,
         name: "Import Niconico to MusicBrainz",
-        version: "1.0",
+        version: pkg.version,
         description: {
           "": "Helps importing music metadata from Niconico into MusicBrainz.",
           ja: "ニコニコ動画からMusicBrainzへのインポートを支援する機能を追加します。",

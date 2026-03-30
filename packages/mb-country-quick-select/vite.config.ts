@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import monkey from "vite-plugin-monkey";
 import { baseconfig } from "../../vite.baseconfig";
 import path from "path";
+import pkg from "./package.json";
 
 export default defineConfig({
   build: {
@@ -19,7 +20,7 @@ export default defineConfig({
       userscript: {
         ...baseconfig,
         name: "MusicBrainz Country Quick Selector",
-        version: "1.0",
+        version: pkg.version,
         description: {
           "": "Streamlines country selection in the Release Editor with quick-access buttons.",
           ja: "リリースエディタで国選択を簡単にするボタンを追加します",

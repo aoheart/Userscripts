@@ -14,8 +14,6 @@
         "globals": "^17.3.0",
         "oxfmt": "^0.40.0",
         "oxlint": "^1.55.0",
-      },
-      "peerDependencies": {
         "typescript": "^5",
       },
     },

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Links from ZULA
 // @namespace       https://github.com/aoheart/Userscripts
-// @version         2026.03.29.1
+// @version         2026.03.31.1
 // @author          aoheart
 // @description     Copy all ZULA distribution links at once, or send them to MusicBrainz.
 // @description:ja  ZULAの配信リンクを一括でコピー、またはMusicBrainzに送信する
@@ -16,6 +16,7 @@
 // @grant           GM.xmlHttpRequest
 // @grant           GM_deleteValue
 // @grant           GM_getValue
+// @grant           GM_info
 // @grant           GM_listValues
 // @grant           GM_registerMenuCommand
 // @grant           GM_setClipboard
@@ -278,6 +279,14 @@
     }
     return { mbid, host };
   }
+  function buildEditNote() {
+    const name = GM_info?.script?.name ?? "unknown script";
+    const version = GM_info?.script?.version;
+    const label = version ? `${name} (${version})` : name;
+    return `${window.location.href}
+---
+${label}`;
+  }
   function seedToMusicBrainz(entries, parsed) {
     const host = parsed?.host ?? "musicbrainz.org";
     const mbRoot = `https://${host}`;
@@ -296,6 +305,7 @@
         }
       }
     }
+    params["edit_note"] = buildEditNote();
     submitMBForm(createMBForm(action, params, { mbRoot }));
   }
   function resolveAmazonLinkTypes(url) {
@@ -744,7 +754,7 @@
         GM_setClipboard(result.entries.map((e) => e.url).join("\n"), "text");
         setState(`✓ ${result.entries.length}件 コピー済`, false);
       }
-      setTimeout(() => setState("コピー", false), 2500);
+      setTimeout(() => setState("copy", false), 2500);
     }
     async function collectAndSeed(parsed, setState) {
       const result = await getEntries(setState);
@@ -754,7 +764,7 @@
         seedToMusicBrainz(result.entries, parsed);
         setState(`✓ ${result.entries.length}件 Seed済`, false);
       }
-      setTimeout(() => setState("送信", false), 2500);
+      setTimeout(() => setState("send", false), 2500);
     }
     const wrapper = document.createElement("div");
     Object.assign(wrapper.style, {
@@ -768,7 +778,7 @@
     Object.assign(leftGroup.style, { display: "flex", alignItems: "center", gap: "8px" });
     const rightGroup = document.createElement("div");
     Object.assign(rightGroup.style, { display: "flex", alignItems: "center", gap: "8px" });
-    const copyButton = createWidgetButton("コピー", "linear-gradient(135deg, #89b4fa, #b4befe)", "#1e1e2e");
+    const copyButton = createWidgetButton("copy", "linear-gradient(135deg, #89b4fa, #b4befe)", "#1e1e2e");
     copyButton.style.display = showCopyBtn ? "" : "none";
     let isCopyProcessing = false;
     const setCopyState = makeProcessingButton(copyButton);
@@ -815,7 +825,7 @@
       const val = mbidInput.value.trim();
       mbidInput.style.borderColor = val === "" || extractReleaseMbid(val) !== null ? "#45475a" : "#f38ba8";
     });
-    const seedButton = createWidgetButton("送信", "#ba478f", "#cdd6f4");
+    const seedButton = createWidgetButton("send", "#ba478f", "#cdd6f4");
     seedButton.style.whiteSpace = "nowrap";
     let isSeedProcessing = false;
     const setSeedState = makeProcessingButton(seedButton);

@@ -1,8 +1,10 @@
 import { defineConfig } from "vite";
 import monkey from "vite-plugin-monkey";
-import { baseconfig } from "../../vite.baseconfig";
+import { baseconfig, createUserScriptUrls } from "../../vite.baseconfig";
 import path from "path";
 import pkg from "./package.json";
+
+const fileid = pkg.name;
 
 export default defineConfig({
   build: {
@@ -14,6 +16,7 @@ export default defineConfig({
       entry: "src/main.ts",
       userscript: {
         ...baseconfig,
+        ...createUserScriptUrls(fileid),
         name: "Import Niconico to MusicBrainz",
         version: pkg.version,
         description: {
@@ -24,7 +27,7 @@ export default defineConfig({
         connect: "musicbrainz.org",
       },
       build: {
-        fileName: "Import Niconico to MusicBrainz.user.js",
+        fileName: `${fileid}.user.js`,
         autoGrant: true,
       },
       server: {

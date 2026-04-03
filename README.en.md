@@ -14,8 +14,8 @@ Install a userscript manager such as Violentmonkey in your browser.
 
 ### MusicBrainz Country Quick Selector
 
-[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/dist/MusicBrainz%20Country%20Quick%20Selector.user.js)
-[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/MusicBrainz%20Country%20Quick%20Selector.user.js)
+[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/mb-country-quick-select.user.js)
+[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/mb-country-quick-select.user.js)
 
 Adds customizable buttons to the release editor for selecting release countries.
 
@@ -23,8 +23,8 @@ Adds customizable buttons to the release editor for selecting release countries.
 
 ### Import AWA to MusicBrainz
 
-[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/dist/Import%20AWA%20to%20MusicBrainz.user.js)
-[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/Import%20AWA%20to%20MusicBrainz.user.js)
+[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/import-awa-to-musicbrainz.user.js)
+[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/import-awa-to-musicbrainz.user.js)
 
 Helps import releases from AWA into MusicBrainz.
 
@@ -37,8 +37,8 @@ Helps import releases from AWA into MusicBrainz.
 
 ### Import Niconico to MusicBrainz
 
-[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/dist/Import%20Niconico%20to%20MusicBrainz.user.js)
-[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/Import%20Niconico%20to%20MusicBrainz.user.js)
+[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/import-niconico-to-musicbrainz.user.js)
+[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/import-niconico-to-musicbrainz.user.js)
 
 Helps import data from Niconico into MusicBrainz.
 
@@ -52,8 +52,8 @@ Helps import data from Niconico into MusicBrainz.
 
 ### Links from LinkCore
 
-[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/dist/Links%20from%20LinkCore.user.js)
-[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/Links%20from%20LinkCore.user.js)
+[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/links-from-linkcore.user.js)
+[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/links-from-linkcore.user.js)
 
 Copies all links listed on LinkCore pages.  
 You can configure which services to include.
@@ -71,8 +71,8 @@ You can configure which services to include.
 
 ### Links from Linkfire
 
-[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/dist/Links%20from%20Linkfire.user.js)
-[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/Links%20from%20Linkfire.user.js)
+[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/links-from-linkfire.user.js)
+[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/links-from-linkfire.user.js)
 
 Copies all links listed on Linkfire pages.
 You can configure which services to include.
@@ -89,8 +89,8 @@ You can configure which services to include.
 
 ### Links from ZULA
 
-[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/dist/Links%20from%20ZULA.user.js)
-[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/Links%20from%20ZULA.user.js)
+[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/links-from-zula.user.js)
+[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/links-from-zula.user.js)
 
 Copies all links listed on ZULA pages.
 You can configure which services to include.

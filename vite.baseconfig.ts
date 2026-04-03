@@ -19,7 +19,7 @@ const REPO = "aoheart/Userscripts";
 const BRANCH = "dist";
 
 export function createUserScriptUrls(scriptName: string) {
-  const base = `https://github.com/${REPO}/raw/refs/heads/${BRANCH}/${scriptName}.user.js`;
+  const base = `https://raw.githubusercontent.com/${REPO}/refs/heads/${BRANCH}/${scriptName}.user.js`;
 
   return {
     updateURL: base,

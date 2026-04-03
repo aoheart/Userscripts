@@ -1,7 +1,7 @@
 {
   "name": "mb-country-quick-select",
   "private": true,
-  "version": "2026.03.29.1",
+  "version": "2026.04.03",
   "type": "module",
   "scripts": {
     "dev": "vite",

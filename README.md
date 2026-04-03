@@ -10,8 +10,8 @@ Violentmonkeyなどの拡張機能をブラウザに追加してください。
 
 ### MusicBrainz Country Quick Selector
 
-[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://github.com/aoheart/Userscripts/raw/refs/heads/dist/MusicBrainz%20Country%20Quick%20Selector.user.js)
-[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/MusicBrainz%20Country%20Quick%20Selector.user.js)
+[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/mb-country-quick-select.user.js)
+[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/mb-country-quick-select.user.js)
 
 リリースエディタにリリース国を選択するカスタマイズ可能なボタンを追加します。
 
@@ -19,8 +19,8 @@ Violentmonkeyなどの拡張機能をブラウザに追加してください。
 
 ### Import AWA to MusicBrainz
 
-[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://github.com/aoheart/Userscripts/raw/refs/heads/dist/Import%20AWA%20to%20MusicBrainz.user.js)
-[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/Import%20AWA%20to%20MusicBrainz.user.js)
+[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/import-awa-to-musicbrainz.user.js)
+[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/import-awa-to-musicbrainz.user.js)
 
 AWAからMusicBrainzへのインポートを支援します。
 
@@ -33,8 +33,8 @@ AWAからMusicBrainzへのインポートを支援します。
 
 ### Import Niconico to MusicBrainz
 
-[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://github.com/aoheart/Userscripts/raw/refs/heads/dist/Import%20Niconico%20to%20MusicBrainz.user.js)
-[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/Import%20Niconico%20to%20MusicBrainz.user.js)
+[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/import-niconico-to-musicbrainz.user.js)
+[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/import-niconico-to-musicbrainz.user.js)
 
 ニコニコ動画からMusicBrainzへのインポートを支援します。
 
@@ -48,8 +48,8 @@ AWAからMusicBrainzへのインポートを支援します。
 
 ### Links from LinkCore
 
-[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://github.com/aoheart/Userscripts/raw/refs/heads/dist/Links%20from%20LinkCore.user.js)
-[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/Links%20from%20LinkCore.user.js)
+[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/links-from-linkcore.user.js)
+[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/links-from-linkcore.user.js)
 
 LinkCoreに掲載されているリンクを一括でコピーします。
 コピーする対象サービスは設定で変更可能です。
@@ -67,8 +67,8 @@ LinkCoreに掲載されているリンクを一括でコピーします。
 
 ### Links from Linkfire
 
-[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://github.com/aoheart/Userscripts/raw/refs/heads/dist/Links%20from%20Linkfire.user.js)
-[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/Links%20from%20Linkfire.user.js)
+[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/links-from-linkfire.user.js)
+[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/links-from-linkfire.user.js)
 
 Linkfireに掲載されているリンクを一括でコピーします。
 コピーする対象サービスは設定で変更可能です。
@@ -85,8 +85,8 @@ Linkfireに掲載されているリンクを一括でコピーします。
 
 ### Links from ZULA
 
-[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://github.com/aoheart/Userscripts/raw/refs/heads/dist/Links%20from%20ZULA.user.js)
-[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/Links%20from%20ZULA.user.js)
+[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/links-from-zula.user.js)
+[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/links-from-zula.user.js)
 
 ZULAに掲載されているリンクを一括でコピーします。
 コピーする対象サービスは設定で変更可能です。

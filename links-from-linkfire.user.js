@@ -679,6 +679,7 @@ ${label}`;
     });
     overlay.addEventListener("keydown", (e) => {
       if (e.key === "Escape") closeModal();
+      if (e.key === "Enter") saveBtn.click();
     });
     requestAnimationFrame(() => overlay.focus());
     return overlay;

@@ -22,21 +22,27 @@
     },
     "packages/import-awa-to-musicbrainz": {
       "name": "import-awa-to-musicbrainz",
+      "version": "2026.4.3",
     },
     "packages/import-niconico-to-musicbrainz": {
       "name": "import-niconico-to-musicbrainz",
+      "version": "2026.4.3",
     },
     "packages/links-from-linkcore": {
       "name": "links-from-linkcore",
+      "version": "2026.4.3",
     },
     "packages/links-from-linkfire": {
       "name": "links-from-linkfire",
+      "version": "2026.4.3",
     },
     "packages/links-from-zula": {
       "name": "links-from-zula",
+      "version": "2026.4.3",
     },
-    "packages/mb-country-quick-select": {
-      "name": "mb-country-quick-select",
+    "packages/mb-country-quick-selector": {
+      "name": "mb-country-quick-selector",
+      "version": "2026.4.3",
     },
   },
   "packages": {
@@ -296,7 +302,7 @@
 
     "make-dir": ["make-dir@3.1.0", "", { "dependencies": { "semver": "^6.0.0" } }, "sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw=="],
 
-    "mb-country-quick-select": ["mb-country-quick-select@workspace:packages/mb-country-quick-select"],
+    "mb-country-quick-selector": ["mb-country-quick-selector@workspace:packages/mb-country-quick-selector"],
 
     "mime": ["mime@2.5.2", "", { "bin": { "mime": "cli.js" } }, "sha512-tqkh47FzKeCPD2PUiPB6pkbMzsCasjxAfC62/Wap5qrUWcb+sFasXUC5I3gYM5iBM8v/Qpn4UK0x+j0iHyFPDg=="],
 

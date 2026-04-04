@@ -1,4 +1,3 @@
-/* eslint-disable security/detect-non-literal-fs-filename */
 import fs from "fs";
 import path from "path";
 import readline from "readline";
@@ -71,9 +70,11 @@ async function main() {
   // =========================
   const viteConfig = `import { defineConfig } from 'vite';
 import monkey from 'vite-plugin-monkey';
-import { baseconfig } from "../../vite.baseconfig";
+import { baseconfig, createUserScriptUrls } from "../../vite.baseconfig";
 import path from 'path';
 import pkg from "./package.json";
+
+const projectName = pkg.name;
 
 export default defineConfig({
   build: {
@@ -85,6 +86,7 @@ export default defineConfig({
       entry: 'src/main.ts',
       userscript: {
         ...baseconfig,
+        ...createUserScriptUrls(projectName),
         name: '${projectName}',
         version: pkg.version,
         description: {
@@ -95,7 +97,7 @@ export default defineConfig({
         connect: [],
       },
       build: {
-        fileName: '${projectName}.user.js',
+        fileName: \`\${projectName}.user.js\`,
         autoGrant: true,
       },
       server: {

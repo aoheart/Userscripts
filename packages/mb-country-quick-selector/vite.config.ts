@@ -4,7 +4,7 @@ import { baseconfig, createUserScriptUrls } from "../../vite.baseconfig";
 import path from "path";
 import pkg from "./package.json";
 
-const fileid = pkg.name;
+const projectName = pkg.name;
 
 export default defineConfig({
   build: {
@@ -21,7 +21,7 @@ export default defineConfig({
       entry: "src/main.ts",
       userscript: {
         ...baseconfig,
-        ...createUserScriptUrls(fileid),
+        ...createUserScriptUrls(projectName),
         name: "MusicBrainz Country Quick Selector",
         version: pkg.version,
         description: {
@@ -31,7 +31,7 @@ export default defineConfig({
         match: ["*://*.musicbrainz.org/release/add", "*://*.musicbrainz.org/release/*/edit"],
       },
       build: {
-        fileName: `${fileid}.user.js`,
+        fileName: `${projectName}.user.js`,
         autoGrant: true,
       },
       server: {

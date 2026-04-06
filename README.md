@@ -10,8 +10,8 @@ Violentmonkeyなどの拡張機能をブラウザに追加してください。
 
 ### MusicBrainz Country Quick Selector
 
-[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/mb-country-quick-select.user.js)
-[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/mb-country-quick-select.user.js)
+[![install](https://img.shields.io/badge/install-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/aoheart/Userscripts/refs/heads/dist/mb-country-quick-selector.user.js)
+[![source](https://img.shields.io/badge/source-lightgrey?style=for-the-badge)](https://github.com/aoheart/Userscripts/blob/dist/mb-country-quick-selector.user.js)
 
 リリースエディタにリリース国を選択するカスタマイズ可能なボタンを追加します。
 

@@ -59,7 +59,7 @@ Copies all links listed on LinkCore pages.
 You can configure which services to include.
 
 > [!WARNING]
-> Make sure all links are correct before importing into MusicBrainz.
+> Please check and import, as barcodes may differ between stores.
 
 #### Features
 
@@ -78,7 +78,7 @@ Copies all links listed on Linkfire pages.
 You can configure which services to include.
 
 > [!WARNING]
-> Make sure all links are correct before importing into MusicBrainz.
+> Please check and import, as barcodes may differ between stores.
 
 #### Features
 
@@ -96,7 +96,7 @@ Copies all links listed on ZULA pages.
 You can configure which services to include.
 
 > [!WARNING]
-> Make sure all links are correct before importing into MusicBrainz.
+> Please check and import, as barcodes may differ between stores.
 
 #### Features
 
